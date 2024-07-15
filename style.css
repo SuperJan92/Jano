@@ -557,10 +557,6 @@ video {
 .hidden {
   display: none;
 }
-.size-80 {
-  width: 20rem;
-  height: 20rem;
-}
 .resize {
   resize: both;
 }
@@ -568,18 +564,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.p-10 {
-  padding: 2.5rem;
-}
 .p-5 {
   padding: 1.25rem;
 }
 .font-square {
   font-family: Square, sans-serif;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 .text-6xl {
   font-size: 3.75rem;
