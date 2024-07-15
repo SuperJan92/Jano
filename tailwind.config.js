@@ -4,7 +4,9 @@ module.exports = {
     '**/*.twig',
   ],
   theme: {
-    extend: {},
+    extend: {
+
+    },
   },
   plugins: [],
 }
