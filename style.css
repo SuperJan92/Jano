@@ -567,6 +567,10 @@ video {
 .p-5 {
   padding: 1.25rem;
 }
+@font-face {
+  font-family: "Square";
+  src: url("/fonts/Square.ttf");
+}
 .font-square {
   font-family: Square, sans-serif;
 }
@@ -579,7 +583,3 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@font-face {
-    font-family: "Square";
-    src: url("../fonts/Square.ttf");
-}
