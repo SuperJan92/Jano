@@ -1,0 +1,12 @@
+/*
+ * Theme Name:
+ * Theme URI: https://github.com/curiousways/
+ * Author: Curious Ways
+ * Description: A Wordpress site built with Wordpress and Timber
+ * Version: 1.0
+ * Text domain:
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
