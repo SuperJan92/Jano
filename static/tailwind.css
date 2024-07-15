@@ -10,3 +10,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Square";
+    src: url("Fonts/Square.ttf");
+}

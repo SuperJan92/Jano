@@ -5,7 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+    },
+    fontFamily: {
+      square: ["Square", "sans-serif"],
     },
   },
   plugins: [],
