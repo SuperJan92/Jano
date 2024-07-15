@@ -4,6 +4,9 @@ module.exports = {
     '**/*.twig',
   ],
   theme: {
+    colors: {
+      'orange': '#f3a932',
+    },
     extend: {
     },
     fontFamily: {
