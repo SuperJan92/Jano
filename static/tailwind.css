@@ -7,11 +7,9 @@
  * Text domain:
 */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
 
-@font-face {
-    font-family: "Square";
-    src: url("/fonts/Square.ttf");
-}
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+

@@ -9,10 +9,10 @@
 	<body class="{{body_class}}" data-template="base.twig">
 		{{ function('wp_body_open') }}
 		<a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
-		<header class="header text-white p-5 mb-20 bg-black" >
+		<header class="header bg-orange" >
 			{% block header %}
 				<div class="wrapper">
-					<h1 class="hdr-logo font-square text-6xl" role="banner">
+					<h1 class="hdr-logo font-square bg-orange-600 text-orange-600" role="banner">
 						<a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
 					</h1>
 					<nav id="nav-main" class="nav-main" role="navigation">
@@ -22,7 +22,7 @@
 			{% endblock %}
 		</header>
 
-		<section id="content" role="main" class="content-wrapper">
+		<section id="content" role="main" class="content-wrapper max-w-7x bg-orange">
 			{% if title %}<h1>{{title}}</h1>{% endif %}
 			<div class="wrapper">
 				{% block content %}

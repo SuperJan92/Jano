@@ -4,13 +4,12 @@ module.exports = {
     '**/*.twig',
   ],
   theme: {
-    colors: {
-      'orange': '#f3a932',
-    },
     extend: {
-    },
-    fontFamily: {
-      square: ["Square", "sans-serif"],
+      colors: {
+        orange: {
+          600: '#f3a932',
+        },
+      }
     },
   },
   plugins: [],
