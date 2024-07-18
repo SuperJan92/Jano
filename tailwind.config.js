@@ -8,7 +8,11 @@ module.exports = {
       Square: ["Square", "sans-serif"],
     },
 
-    extend: {},
+    extend: {
+      colors: {
+        'Orange':'#f3a932',
+      }
+    },
   },
   plugins: [],
 }
