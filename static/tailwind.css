@@ -1,15 +1,10 @@
-/*
- * Theme Name:
- * Theme URI: https://github.com/curiousways/
- * Author: Curious Ways
- * Description: A Wordpress site built with Wordpress and Timber
- * Version: 1.0
- * Text domain:
-*/
-
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
 
+@font-face {
+    font-family: "Square";
+    src: url("fonts/Square.ttf");
+}
