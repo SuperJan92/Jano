@@ -22,17 +22,9 @@
 			{% endblock %}
 		</header>
 
-		<section id="content" role="main" class="content-wrapper max-w-7x bg-orange">
-			<div class="wrapper">
-				{% block content %}
-					Sorry, no content
-				{% endblock %}
-			</div>
-			{% if sidebar %}
-				<aside class="layout-sidebar">
-					{{sidebar}}
-				</aside>
-			{% endif %}
+		<section id="content" role="main" class="content-wrapper">
+			{% block content %}
+			{% endblock %}
 		</section>
 
 		{% block footer %}
@@ -41,5 +33,7 @@
 			</footer>
 			{{ function('wp_footer') }}
 		{% endblock %}
+
+
 	</body>
 </html>
