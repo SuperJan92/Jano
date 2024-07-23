@@ -544,6 +544,15 @@ video {
   }
 }
 
+.gradientBackgroud {
+        background: linear-gradient(162deg, #efefef 55%, #eaeaea 55%);
+    }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block {
   display: block;
 }
@@ -564,8 +573,12 @@ video {
   width: 10rem;
 }
 
-.max-w-\[780px\] {
-  max-width: 780px;
+.max-w-\[1220px\] {
+  max-width: 1220px;
+}
+
+.max-w-\[410px\] {
+  max-width: 410px;
 }
 
 .resize {
@@ -580,55 +593,17 @@ video {
   justify-content: space-between;
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.p-20 {
-  padding: 5rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-5 {
@@ -636,8 +611,16 @@ video {
   padding-right: 1.25rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .font-Square {
   font-family: Square, sans-serif;
+}
+
+.font-Roboto {
+  font-family: Roboto, sans-serif;
 }
 
 .text-6xl {
@@ -653,9 +636,9 @@ video {
   letter-spacing: -0.05em;
 }
 
-.text-Orange {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(243 169 50 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -663,10 +646,7 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
     font-family: "Square";

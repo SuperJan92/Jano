@@ -6,10 +6,12 @@ module.exports = {
   theme: {
     fontFamily: {
       Square: ["Square", "sans-serif"],
+      Roboto: ["Roboto", "sans-serif"],
     },
     extend: {
       colors: {
         'Orange':'#f3a932',
+        'Lightgrey':'#ececec',
       },
       fontSize: {
         'h1': '48px',

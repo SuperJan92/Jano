@@ -1,10 +1,15 @@
 {% extends "base.twig" %}
 
 {% block content %}
-    <div class="banner bg-gray-300">
-        <div class="banner_wrapper p-20 max-w-[780px] text-black">
+    <div class="gradientBackgroud">
+    <div class="banner-inner flex items-center justify-between max-w-[1220px] mx-auto px-5 pt-20">
+        <div class="text-black p-4">
+            <h4 class="font-Roboto">{{ post.meta('small_top_tile') }}</h4>
             <h1 class="text-h1">{{ post.meta('banner_title') }}</h1>
             <p class="">{{ post.meta('banner_text') }}</p>
+        </div>
+        <div>
+            <img src="https://jano.local/wp-content/uploads/2024/07/Jan.png" class="max-w-[410px]"/>
         </div>
     </div>
 {% endblock %}
