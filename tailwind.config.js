@@ -14,15 +14,22 @@ module.exports = {
         'Lightgrey':'#ececec',
       },
       fontSize: {
-        'h1': '48px',
+        'h1': '70px',
         'h2': '36px',
         'h3': '30px',
         'h4': '24px',
         'h5': '20px',
         'h6': '16px',
       },
+      typography: {
+        p: {
+          fontFamily: ["Roboto", "sans-serif"],
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 

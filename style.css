@@ -545,12 +545,28 @@ video {
 }
 
 .gradientBackgroud {
-        background: linear-gradient(162deg, #efefef 55%, #eaeaea 55%);
+        background: linear-gradient(162deg, #fcebcf 55%, #fbe3bb 55%);
     }
+
+.fixed {
+  position: fixed;
+}
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -573,12 +589,20 @@ video {
   width: 10rem;
 }
 
-.max-w-\[1220px\] {
-  max-width: 1220px;
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[1100px\] {
+  max-width: 1100px;
 }
 
 .max-w-\[410px\] {
   max-width: 410px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
 }
 
 .resize {
@@ -591,6 +615,11 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.bg-Orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 169 50 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -606,21 +635,31 @@ video {
   padding: 1rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
 }
 
-.font-Square {
-  font-family: Square, sans-serif;
-}
-
 .font-Roboto {
   font-family: Roboto, sans-serif;
+}
+
+.font-Square {
+  font-family: Square, sans-serif;
 }
 
 .text-6xl {
@@ -629,11 +668,28 @@ video {
 }
 
 .text-h1 {
-  font-size: 48px;
+  font-size: 70px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-\[1em\] {
+  line-height: 1em;
 }
 
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.text-Orange {
+  --tw-text-opacity: 1;
+  color: rgb(243 169 50 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -651,4 +707,9 @@ video {
 @font-face {
     font-family: "Square";
     src: url("fonts/Square.ttf");
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }

@@ -13,7 +13,7 @@
 
 @layer components {
     .gradientBackgroud {
-        background: linear-gradient(162deg, #efefef 55%, #eaeaea 55%);
+        background: linear-gradient(162deg, #fcebcf 55%, #fbe3bb 55%);
     }
 }
 
