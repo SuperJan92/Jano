@@ -1,12 +1,12 @@
 {% extends "base.twig" %}
 
 {% block content %}
-    <div class="gradientBackgroud">
+    <div class="gradientBackgroud prose-p:font-Roboto prose-p:">
     <div class="banner-inner flex items-center justify-between max-w-[1100px] mx-auto px-5 pt-20">
         <div class="text-black p-4">
-            <h4 class="font-Roboto text-Orange uppercase font-bold mb-2">{{ post.meta('small_top_tile') }}</h4>
+            <h4 class="font-Roboto text-Orange uppercase font-bold mb-5">{{ post.meta('small_top_tile') }}</h4>
             <h1 class="text-h1 leading-[1em] mb-5">{{ post.meta('banner_title') }}</h1>
-            <div class="mb-10 max-w-[500px]">{{ post.meta('banner_text') }}</div>
+            <div class="mb-8 max-w-[480px] subpixel-antialiased">{{ post.meta('banner_text') }}</div>
             <button class="bg-Orange hover:bg-black text-white font-bold py-2 px-4">Read more</button>
         </div>
         <div>
