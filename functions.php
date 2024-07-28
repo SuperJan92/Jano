@@ -22,12 +22,14 @@ function create_post_type() {
         array(
             'labels' => array(
                 'name' => __( 'Medewerker' ),
-                'singular_name' => __( 'Medewerkers' )
+                'singular_name' => __( 'Medewerkers' ),
+                'add_new' => __( 'Medewerker toevoegen' )
             ),
             'public' => true,
             'has_archive' => true,
             'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
-            'taxonomies' => array('category', 'post_tag')
+            'taxonomies' => array('category', 'post_tag'),
+            'menu_icon' => 'dashicons-groups'
         )
     );
 }
