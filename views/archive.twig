@@ -1,9 +1,21 @@
 {# This file demonstrates using most of the index.twig template and modifying 
    just a small part. See `search.twig` for an example of another approach #}
 
-{% extends "index.twig" %}
+{% extends "base.twig" %}
 
 {% block content %}
-  {{ parent() }}
+    <section class="max-w-[1380px] mx-auto mt-40 mb-40 grid-cols-[200px_minmax(900px,_1fr)_100px] grid">
+        <aside>
+            <h2>Functie</h2>
+        </aside>
+        <section class="columns-3 gap-8">
+            {% if posts is not empty %}
 
+                {% for post in posts %}
+                    <article>{{ include('teaser.twig') }}</article>
+                {% endfor %}
+
+            {% endif %}
+        </section>
+    </section>
 {% endblock %}
