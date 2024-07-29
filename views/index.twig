@@ -1,5 +1,12 @@
 {% extends "base.twig" %}
 
 {% block content %}
+    {% if posts is not empty %}
+        <ul>
+        {% for post in posts %}
+            <li>{{ include('teaser.twig') }}</li>
+        {% endfor %}
+        <ul>
+    {% endif %}
 
 {% endblock %}

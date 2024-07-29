@@ -1,8 +1,4 @@
 <?php
-/**
- * Timber starter-theme
- * https://github.com/timber/starter-theme
- */
 
 // Load Composer dependencies.
 require_once __DIR__ . '/vendor/autoload.php';
@@ -16,7 +12,7 @@ Timber::$dirname = ['templates', 'views'];
 
 new StarterSite();
 
-//Medewerkers post type
+//Medewerkers CPT
 add_action('init', function () {
     register_post_type('medewerker', [
         'label' => __('Medewerkers'),
@@ -25,8 +21,9 @@ add_action('init', function () {
         'menu_icon' => 'dashicons-businessman',
         'supports' => ['title', 'editor', 'thumbnail', 'author', 'revisions', 'comments'],
         'show_in_rest' => true,
-        'rewrite' => ['slug' => 'medewerker'],
+        'rewrite' => ['slug' => 'medewerkers'],
         'taxonomies' => ['functie'],
+        'has_archive' => true,
         'labels' => [
             'name' => __( 'Medewerkers' ),
             'singular_name' => __( 'Medewerkers' ),
@@ -39,7 +36,7 @@ add_action('init', function () {
             'menu_name' => __( 'Medewerkers' ),
         ],
     ]);
-
+    //Functie taxonomy
     register_taxonomy('functie', ['medewerker'], [
         'label' => __('Functie'),
         'hierarchical' => true,
