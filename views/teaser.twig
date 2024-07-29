@@ -1,0 +1,21 @@
+<img
+        src="{{ post.thumbnail.src('medium') }}"
+        alt="{{ post.thumbnail.alt }}"
+        width="{{ post.thumbnail.width }}"
+        height="{{ post.thumbnail.height }}"
+        loading="lazy"
+>
+<div class="bg-gray-200 p-10">
+<h6 class="text-3xl">
+    <a
+            href="{{ post.link }}"
+            aria-describedby="desc-{{ post.slug }}"
+    >{{ post.title }}</a>
+</h6>
+
+<p>{{ post.excerpt }}</p>
+
+<a
+        href="{{ post.link }}"
+>Read more</a>
+</div>
