@@ -5,7 +5,7 @@
         height="{{ post.thumbnail.height }}"
         loading="lazy"
 >
-<div class="bg-gray-200 p-10">
+<div class="bg-gray-200 p-10 mb-10">
 <h6 class="text-3xl">
     <a
             href="{{ post.link }}"
@@ -13,9 +13,6 @@
     >{{ post.title }}</a>
 </h6>
 
-<p>{{ post.excerpt }}</p>
+<p>{{ post.excerpt({ words: 10, read_more: 'Lees dan' }) }}</p>
 
-<a
-        href="{{ post.link }}"
->Read more</a>
 </div>
