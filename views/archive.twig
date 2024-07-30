@@ -8,9 +8,10 @@
         <aside>
             <div>
                 <h4>Functies</h4>
+                {{ include('post-filter.twig') }}
             </div>
         </aside>
-        <section class="columns-3 gap-8">
+        <section class="columns-3 gap-8" id="response">
             {% if posts is not empty %}
 
                 {% for post in posts %}

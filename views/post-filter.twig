@@ -1,0 +1,13 @@
+
+<form id="filter" action="{{ site.url }}/wp-admin/admin-ajax.php" method="POST">
+    <select name="categoryFilter">
+        <option value="">Select...</option>
+        {% for term in terms %}
+            <option value="{{ functie.term_id }}">{{ functie.name }} ({{ functie.count }})</option>
+        {% endfor %}
+    </select>
+
+    <button>Apply filter</button>
+
+    <input type="hidden" name="action" value="TEST">
+</form>
