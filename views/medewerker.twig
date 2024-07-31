@@ -1,13 +1,9 @@
-{# This file demonstrates using most of the index.twig template and modifying 
-   just a small part. See `search.twig` for an example of another approach #}
-
 {% extends "base.twig" %}
 
 {% block content %}
     <section class="max-w-[1380px] mx-auto mt-40 mb-40 grid-cols-[200px_minmax(900px,_1fr)_100px] grid">
         <aside>
             <div>
-                <h4>Functies</h4>
                 {{ include('post-filter.twig') }}
             </div>
         </aside>
