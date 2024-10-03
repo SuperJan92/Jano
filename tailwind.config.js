@@ -4,13 +4,12 @@ module.exports = {
     '**/*.twig',
   ],
   theme: {
-    fontFamily: {
-      Filson: ["Filson", "sans-serif"],
-      Roboto: ["Roboto", "sans-serif"],
-    },
     extend: {
       colors: {
         'Orange':'#ff9d21',
+      },
+      fontFamily: {
+        'filson': ['Filson', 'sans-serif'],
       },
       fontSize: {
         'h1': '70px',

@@ -393,6 +393,9 @@ video {
 [hidden] {
   display: none;
 }
+    h1,h2,h3,h4,h5,h6 {
+  font-family: Filson, sans-serif;
+}
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -592,6 +595,9 @@ video {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+.font-filson {
+  font-family: Filson, sans-serif;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -603,6 +609,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-Orange {
+  --tw-text-opacity: 1;
+  color: rgb(255 157 33 / var(--tw-text-opacity));
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
