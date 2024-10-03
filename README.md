@@ -1,2 +1,2 @@
 # Jano
-A WordPress theme built on Timber With Tailwind CSS
+A WordPress theme built with Twig and Tailwind.
