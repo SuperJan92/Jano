@@ -6,19 +6,14 @@
 	</head>
 {% endblock %}
 
-	<body class="{{body_class}}" data-template="base.twig">
+	<body class="{{body_class}}" data-template="base.twig" style="background:#1a212c;">
 		{{ function('wp_body_open') }}
 		<a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
-		<header class="header fixed w-full p-3 top-0 bg-white" >
+		<header class="header fixed">
 			{% block header %}
-				<div class="wrapper flex items-center justify-between">
-					<h1 class="hdr-logo text-6xl font-Square text-black tracking-tighter" role="banner">
-						<a class="hdr-logo-link" href="{{site.url}}" rel="home"><img src="https://jano.local/wp-content/uploads/2024/07/logo.png" class="w-40" /></a>
-					</h1>
 					<nav id="nav-main" class="nav-main text-white inline-block" role="navigation">
 						{% include "menu.twig" with {'items': menu.get_items} %}
 					</nav><!-- #nav -->
-				</div>
 			{% endblock %}
 		</header>
 
