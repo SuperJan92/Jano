@@ -5,19 +5,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        'Orange':'#ff9d21',
-      },
-      fontFamily: {
-        'filson': ['Filson', 'sans-serif'],
-      },
       fontSize: {
-        'h1': '70px',
-        'h2': '36px',
-        'h3': '30px',
-        'h4': '24px',
-        'h5': '20px',
-        'h6': '16px',
+        '6xl': '3.75rem',
+      },
+      colors: {
+        'custom-orange': '#ff9d20',
+        'custom-lightgray': '#797e86',
+        'custom-darkgray': '#60666f',
+        'custom-gray': '#bdbfc3',
+      },
+    },
+      fontFamily: {
+        'goldplay': ['goldplay', 'sans-serif'],
       },
       typography: {
         p: {
@@ -25,9 +24,6 @@ module.exports = {
         },
       },
     },
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
+  }
+
 
