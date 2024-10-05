@@ -550,9 +550,6 @@ video {
 .mb-40 {
   margin-bottom: 10rem;
 }
-.mt-16 {
-  margin-top: 4rem;
-}
 .mt-40 {
   margin-top: 10rem;
 }
@@ -562,11 +559,26 @@ video {
 .inline-block {
   display: inline-block;
 }
+.flex {
+  display: flex;
+}
 .grid {
   display: grid;
 }
 .hidden {
   display: none;
+}
+.h-24 {
+  height: 6rem;
+}
+.h-screen {
+  height: 100vh;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-full {
+  width: 100%;
 }
 .max-w-\[1380px\] {
   max-width: 1380px;
@@ -581,6 +593,18 @@ video {
 .grid-cols-\[200px_minmax\(900px\2c _1fr\)_100px\] {
   grid-template-columns: 200px minmax(900px, 1fr) 100px;
 }
+.flex-col {
+  flex-direction: column;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
 .gap-8 {
   gap: 2rem;
 }
@@ -591,9 +615,16 @@ video {
 .p-10 {
   padding: 2.5rem;
 }
+.p-0 {
+  padding: 0px;
+}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .font-filson {
   font-family: Filson, sans-serif;
@@ -610,13 +641,14 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-Orange {
-  --tw-text-opacity: 1;
-  color: rgb(255 157 33 / var(--tw-text-opacity));
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
     font-family: "Filson";
     src: url("fonts/Filson Pro Regular.ttf");
+}
+
+section{
+  max-width:1000px;
+  margin: 0 auto;
 }

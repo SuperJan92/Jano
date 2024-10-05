@@ -6,18 +6,19 @@
 	</head>
 {% endblock %}
 
-	<body class="{{body_class}}" data-template="base.twig" style="background:#1a212c;">
+	<body class="{{body_class}}" data-template="base.twig" style="background:#1b2430;">
 		{{ function('wp_body_open') }}
 		<a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
-		<header class="header fixed">
+		<header class="header fixed w-full flex h-24 px-12">
 			{% block header %}
-					<nav id="nav-main" class="nav-main text-white inline-block" role="navigation">
+					<nav id="nav-main" class="nav-main text-white flex items-center" role="navigation">
+						{% include "logo.twig" with {'items': menu.get_items} %}
 						{% include "menu.twig" with {'items': menu.get_items} %}
 					</nav><!-- #nav -->
 			{% endblock %}
 		</header>
 
-		<section id="content" role="main" class="content-wrapper mt-16 top">
+		<section id="content" role="main" class="content-wrapper flex justify-center items-start flex-col min-h-screen h-screen p-0">
 			{% block content %}
 			{% endblock %}
 		</section>
