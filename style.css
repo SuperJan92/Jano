@@ -718,3 +718,34 @@ video {
     url('fonts/goldplay-bold.woff2') format('woff2');
     font-weight:600
 }
+#js-svg circle{
+  stroke-dasharray: 252;
+  stroke-dashoffset: 252;
+  animation: 2s ease forwards logoCircle;
+}
+
+#js-svg text{
+  opacity: 0;
+  animation: 1s forwards logoText;
+  animation-delay: 2s;
+}
+
+@keyframes logoCircle {
+  0%{
+    stroke-dashoffset: 252;
+  }
+
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logoText {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
