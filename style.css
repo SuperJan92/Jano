@@ -540,6 +540,12 @@ video {
 .fixed {
   position: fixed;
 }
+.inset-0 {
+  inset: 0px;
+}
+.z-50 {
+  z-index: 50;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -577,6 +583,9 @@ video {
 .h-24 {
   height: 6rem;
 }
+.h-full {
+  height: 100%;
+}
 .h-screen {
   height: 100vh;
 }
@@ -589,17 +598,11 @@ video {
 .max-w-\[1380px\] {
   max-width: 1380px;
 }
-.max-w-\[790px\] {
-  max-width: 790px;
-}
-.max-w-md {
-  max-width: 28rem;
-}
-.max-w-lg {
-  max-width: 32rem;
-}
 .max-w-\[500px\] {
   max-width: 500px;
+}
+.max-w-\[790px\] {
+  max-width: 790px;
 }
 .resize {
   resize: both;
@@ -625,6 +628,10 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.bg-\[\#101418\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 20 24 / var(--tw-bg-opacity));
 }
 .bg-gray-200 {
   --tw-bg-opacity: 1;
@@ -710,36 +717,4 @@ video {
     src: url('fonts/goldplay-bold.woff') format('woff'),
     url('fonts/goldplay-bold.woff2') format('woff2');
     font-weight:600
-}
-
-#js-svg circle{
-  stroke-dasharray: 252;
-  stroke-dashoffset: 252;
-  animation: 2s ease forwards logoCircle;
-}
-
-#js-svg text{
-  opacity: 0;
-  animation: 1s forwards logoText;
-  animation-delay: 2s;
-}
-
-@keyframes logoCircle {
-  0%{
-    stroke-dashoffset: 252;
-  }
-
-  100%{
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes logoText {
-  0%{
-    opacity: 0;
-  }
-
-  100%{
-    opacity: 1;
-  }
 }
