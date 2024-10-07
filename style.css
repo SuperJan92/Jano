@@ -1442,13 +1442,40 @@ h1,h2,h3,h4,h5,h6 {
 #js-svg circle{
   stroke-dasharray: 252;
   stroke-dashoffset: 252;
-  animation: 2s ease forwards logoCircle;
+  animation: 1.5s ease forwards logoCircle;
 }
 
 #js-svg text{
   opacity: 0;
-  animation: 1s forwards logoText;
-  animation-delay: 2s;
+  animation: 0.5s forwards logoText;
+  animation-delay: 1.7s;
+}
+
+#js-svg{
+  animation: 0.3s forwards logoGone;
+  animation-delay: 2.5s;
+}
+
+#js-overlay{
+  animation: 2s forwards overlayGone;
+  opacity:1;
+  animation-delay: 2.5s;
+
+}
+
+@keyframes overlayGone {
+  0%{
+    opacity:1;
+  }
+
+  50%{
+    opacity:0;
+  }
+
+  100%{
+    display: none;
+    opacity:0;
+  }
 }
 
 @keyframes logoCircle {
@@ -1468,5 +1495,15 @@ h1,h2,h3,h4,h5,h6 {
 
   100%{
     opacity: 1;
+  }
+}
+
+@keyframes logoGone {
+  0%{
+    transform: scale(1);
+  }
+
+  100%{
+    transform: scale(0);
   }
 }
