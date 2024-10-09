@@ -17,13 +17,12 @@ module.exports = {
     },
       fontFamily: {
         'goldplay': ['goldplay', 'sans-serif'],
+        'OpenSans': ['OpenSans', 'sans-serif'],
       },
       typography: {
         p: {
-          fontFamily: ["Roboto", "sans-serif"],
+          fontFamily: ["OpenSans", "sans-serif"],
         },
       },
     },
   }
-
-

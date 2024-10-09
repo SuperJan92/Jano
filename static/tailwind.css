@@ -22,8 +22,21 @@
     font-weight:600
 }
 
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Regular.woff') format('woff'),
+    url('fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight:400
+}
+
 @layer base {
     h1,h2,h3,h4,h5,h6 {
         @apply font-goldplay;
+    }
+}
+
+@layer base {
+    html, p {
+        @apply font-OpenSans;
     }
 }
