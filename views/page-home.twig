@@ -1,9 +1,20 @@
 {% extends "base.twig" %}
 {% block content %}
-    <p class="text-custom-orange text-sm font-light mb-3">Hi, my name is</p>
-    <h1 class=" text-6xl text-custom-gray leading-none font-semibold">Jan Hylke van Erkel.</h1>
-    <h1 class="text-6xl text-custom-darkgray font-semibold mb-2">I build things for the web.</h1>
-    <p class="text-custom-lightgray max-w-[500px] font-OpenSans">I specialize in WordPress development and have solid skills in HTML, CSS, JavaScript, PHP, Twig and Timber. I thrive on creating aesthetically pleasing, functional digital experiences.</p>
-    <a href="#"><button class="text-custom-orange border border-custom-orange rounded-full py-3 px-8 text-xs mt-8">More about me</button></a>
+    <section id="home" class="h-screen w-full flex items-center justify-center">
+        <div class="inner">
+        <p class="text-custom-orange text-sm font-light mb-3">Hi, my name is</p>
+        <h1 class="text-6xl text-custom-gray leading-none font-semibold">Jan Hylke van Erkel.</h1>
+        <h1 class="text-6xl text-custom-darkgray font-semibold mb-2">I build things for the web.</h1>
+        <p class="text-custom-lightgray max-w-[500px] font-OpenSans">I specialize in WordPress development and have solid skills in HTML, CSS, JavaScript, PHP, Twig and Timber. I thrive on creating aesthetically pleasing, functional digital experiences.</p>
+        <a href="#"><button class="text-custom-orange border border-custom-orange rounded-full py-3 px-8 text-xs mt-8">More about me</button></a>
+        </div>
+    </section>
+    <section id="about" class="h-screen w-full flex items-center justify-start">
+        <div class="inner">
+            <h2 class="text-4xl text-custom-gray leading-none font-semibold">1. About me</h2>
+            <p class="text-custom-lightgray font-OpenSans">Hello! My name is Jan Hylke van Erkel, and I’m a web designer and WordPress developer from The Hague. I specialize in creating custom websites that are both visually appealing and highly functional. My goal is to build fast, responsive, and user-friendly sites that help businesses and individuals thrive online. When I’m not coding or designing, I’m hanging out with my cat, Lannie, who keeps me company during work hours. I’m always staying up-to-date with the latest web design trends and love the challenge of turning ideas into beautiful, functional websites.</p>
+
+        </div>
+    </section>
 {% endblock %}
 
